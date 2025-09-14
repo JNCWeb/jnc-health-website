@@ -1,0 +1,17 @@
+{
+  "name": "jnc-health-website",
+  "version": "1.0.0",
+  "description": "JNC Health Solutions Website",
+  "type": "wix-site",
+  "wix": {
+    "siteId": "your-site-id",
+    "appId": "your-app-id"
+  },
+  "scripts": {
+    "dev": "wix dev",
+    "build": "wix build",
+    "deploy": "wix deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

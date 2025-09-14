@@ -15,7 +15,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="JNC Health Solutions | Licensed Health Insurance Advisor">
     <meta property="og:description" content="Licensed health insurance advisor in 37 states. Find affordable health coverage for individuals, families, and businesses. Free quotes, personalized service.">
-    <meta property="og:image" content="https://jnchealthsolutions.com/JNCLogo.png">
+    <meta property="og:image" content="https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png">
     <meta property="og:url" content="https://jnchealthsolutions.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="JNC Health Solutions">
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="JNC Health Solutions | Licensed Health Insurance Advisor">
     <meta name="twitter:description" content="Licensed health insurance advisor in 37 states. Find affordable health coverage for individuals, families, and businesses.">
-    <meta name="twitter:image" content="https://jnchealthsolutions.com/JNCLogo.png">
+    <meta name="twitter:image" content="https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png">
     
     <!-- Local SEO Meta Tags -->
     <meta name="geo.region" content="US-FL">
@@ -196,8 +196,8 @@
         "alternateName": "John Kalafatis Health Insurance",
         "description": "Licensed health insurance advisor providing comprehensive coverage solutions for individuals, families, and businesses across 37 states.",
         "url": "https://jnchealthsolutions.com",
-        "logo": "https://jnchealthsolutions.com/JNCLogo.png",
-        "image": "https://jnchealthsolutions.com/JNCLogo.png",
+        "logo": "https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png",
+        "image": "https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png",
         "telephone": "+1-727-297-1778",
         "email": "john.kalafatis@jnchealthcaresolutions.com",
         "address": {
@@ -2978,8 +2978,8 @@
             margin: 2% auto;
             padding: 0;
             border-radius: var(--radius);
-            width: 95%;
-            max-width: 1200px;
+            width: 90%;
+            max-width: 1000px;
             max-height: 90vh;
             overflow: hidden;
             box-shadow: var(--shadow-md);
@@ -3077,8 +3077,8 @@
         }
 
         .license-document {
-            padding: 3rem 2rem;
-            min-height: 500px;
+            padding: 1rem;
+            min-height: 700px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -3839,21 +3839,21 @@
         }
         
         /* PDF Viewer Styles */
-       .pdf-viewer-container {
-    padding: 10px;
-    min-height: 800px;
-    width: 100%;
-}
+        .pdf-viewer-container {
+            padding: 10px;
+            min-height: 800px;
+            width: 100%;
+        }
         
-       .pdf-viewer {
-    border: 2px solid #e6e6e6;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #f8f9fa;
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 700px !important;
-}
+        .pdf-viewer {
+            border: 2px solid #e6e6e6;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f8f9fa;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 700px !important;
+        }
         
         .pdf-placeholder {
             text-align: center;
@@ -3910,7 +3910,7 @@
         <div class="nav-container">
             <a href="#" class="nav-logo">
                 <div class="logo-container">
-                    <img src="JNCLogo.png" alt="Health Insurance Logo" class="logo-image" style="filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
+                    <img src="ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png" alt="Health Insurance Logo" class="logo-image" style="filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
                 </div>
             </a>
             
@@ -3934,7 +3934,7 @@
                     Find Your Perfect <span class="accent">Health Insurance</span> Plan
                 </h1>
                 <p class="h-sub">
-                    Licensed in Multiple States, I help individuals and families find affordable, comprehensive health coverage that fits their needs and budget.
+                    Licensed in 37 states, I help individuals and families find affordable, comprehensive health coverage that fits their needs and budget.
                 </p>
         <div class="h-cta">
             <span class="mini">Licensed Health Advisor</span>
@@ -4999,6 +4999,10 @@
                         <div class="document-icon">📄</div>
                         <h4 id="licenseTitle">License Document</h4>
                         <p id="licenseDescription">Click below to view or download the license document.</p>
+                        <div class="pdf-actions">
+                            <button class="view-pdf-btn" onclick="viewPDF()">View PDF</button>
+                            <button class="download-pdf-btn" onclick="downloadPDF()">Download PDF</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -5116,7 +5120,7 @@
             
             <div class="footer-bottom">
                 <div class="footer-logo">
-                    <img src="JNCLogo.png" alt="Health Insurance Logo" style="width: 58px; height: 58px; border-radius: 8px; object-fit: contain; margin-right: 12px; filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
+                    <img src="ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png" alt="Health Insurance Logo" style="width: 58px; height: 58px; border-radius: 8px; object-fit: contain; margin-right: 12px; filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
                     JNC Health Solutions
                 </div>
                 
@@ -5420,13 +5424,47 @@
             document.getElementById('stateSelect').value = currentState.code;
             
             // Update PDF source
-            const pdfUrl = `https://jncweb.github.io/jnc-health-website/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://jnchealthsolutions.github.io/licenses/${currentState.code}-license.pdf`;
             document.getElementById('pdfFrame').src = pdfUrl;
             
             // Track license view
             trackEvent('license_viewed', {
                 state: currentState.name,
                 state_code: currentState.code
+            });
+        }
+        
+        function viewPDF() {
+            const currentState = states[currentStateIndex];
+            const pdfUrl = `https://jnchealthsolutions.github.io/licenses/${currentState.code}-license.pdf`;
+            
+            // Show PDF in iframe
+            document.getElementById('pdfFrame').src = pdfUrl;
+            document.getElementById('pdfViewer').style.display = 'block';
+            document.getElementById('pdfPlaceholder').style.display = 'none';
+            
+            trackEvent('pdf_viewed', {
+                state: currentState.name,
+                method: 'iframe_viewer'
+            });
+        }
+        
+        function downloadPDF() {
+            const currentState = states[currentStateIndex];
+            const pdfUrl = `https://jnchealthsolutions.github.io/licenses/${currentState.code}-license.pdf`;
+            
+            // Create download link
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = `${currentState.name}-License.pdf`;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            trackEvent('pdf_downloaded', {
+                state: currentState.name,
+                method: 'direct_download'
             });
         }
 
