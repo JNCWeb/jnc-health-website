@@ -4995,10 +4995,6 @@
                         <div class="document-icon">📄</div>
                         <h4 id="licenseTitle">License Document</h4>
                         <p id="licenseDescription">Click below to view or download the license document.</p>
-                        <div class="pdf-actions">
-                            <button class="view-pdf-btn" onclick="viewPDF()">View PDF</button>
-                            <button class="download-pdf-btn" onclick="downloadPDF()">Download PDF</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -5427,40 +5423,6 @@
             trackEvent('license_viewed', {
                 state: currentState.name,
                 state_code: currentState.code
-            });
-        }
-        
-        function viewPDF() {
-            const currentState = states[currentStateIndex];
-            const pdfUrl = `https://jncweb.github.io/jnc-health-website/licenses/${currentState.code}-license.pdf`;
-            
-            // Show PDF in iframe
-            document.getElementById('pdfFrame').src = pdfUrl;
-            document.getElementById('pdfViewer').style.display = 'block';
-            document.getElementById('pdfPlaceholder').style.display = 'none';
-            
-            trackEvent('pdf_viewed', {
-                state: currentState.name,
-                method: 'iframe_viewer'
-            });
-        }
-        
-        function downloadPDF() {
-            const currentState = states[currentStateIndex];
-            const pdfUrl = `https://jncweb.github.io/jnc-health-website/licenses/${currentState.code}-license.pdf`;
-            
-            // Create download link
-            const link = document.createElement('a');
-            link.href = pdfUrl;
-            link.download = `${currentState.name}-License.pdf`;
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            
-            trackEvent('pdf_downloaded', {
-                state: currentState.name,
-                method: 'direct_download'
             });
         }
 
