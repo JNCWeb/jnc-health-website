@@ -587,6 +587,12 @@
             10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
             20%, 40%, 60%, 80% { transform: translateX(2px); }
         }
+
+                /* Red border highlight for validation errors */
+        .error-highlight {
+            border: 2px solid #e74c3c !important;
+            box-shadow: 0 0 5px rgba(231, 76, 60, 0.3) !important;
+        }
         
         /* Scroll-triggered animations */
         .animate-on-scroll {
@@ -6021,7 +6027,7 @@
                     // Highlight all coverage pills to show user needs to select one
                     coveragePills.forEach(pill => {
                         pill.style.border = '2px solid #e74c3c';
-                        pill.style.animation = 'shake 0.5s ease-in-out';
+                        pill.style.border = '2px solid #e74c3c'; pill.style.animation = 'shake 0.5s ease-in-out';
                     });
                     missingFields.push('Coverage type');
                     if (!firstErrorField) firstErrorField = coveragePills[0];
@@ -6052,7 +6058,7 @@
                         if (!firstErrorField) firstErrorField = element;
                         
                         // Add shake animation to highlight the field
-                        element.style.animation = 'shake 0.5s ease-in-out';
+                        element.style.border = '2px solid #e74c3c'; element.style.animation = 'shake 0.5s ease-in-out';
                         setTimeout(() => {
                             element.style.animation = '';
                         }, 500);
