@@ -15,7 +15,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="JNC Health Solutions | Licensed Health Insurance Advisor">
     <meta property="og:description" content="Licensed health insurance advisor in 37 states. Find affordable health coverage for individuals, families, and businesses. Free quotes, personalized service.">
-    <meta property="og:image" content="https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png">
+    <meta property="og:image" content="https://jnchealthsolutions.com/JNCLogo.png">
     <meta property="og:url" content="https://jnchealthsolutions.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="JNC Health Solutions">
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="JNC Health Solutions | Licensed Health Insurance Advisor">
     <meta name="twitter:description" content="Licensed health insurance advisor in 37 states. Find affordable health coverage for individuals, families, and businesses.">
-    <meta name="twitter:image" content="https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png">
+    <meta name="twitter:image" content="https://jnchealthsolutions.com/JNCLogo.png">
     
     <!-- Local SEO Meta Tags -->
     <meta name="geo.region" content="US-FL">
@@ -196,8 +196,8 @@
         "alternateName": "John Kalafatis Health Insurance",
         "description": "Licensed health insurance advisor providing comprehensive coverage solutions for individuals, families, and businesses across 37 states.",
         "url": "https://jnchealthsolutions.com",
-        "logo": "https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png",
-        "image": "https://jnchealthsolutions.com/ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png",
+        "logo": "https://jnchealthsolutions.com/JNCLogo.png",
+        "image": "https://jnchealthsolutions.com/JNCLogo.png",
         "telephone": "+1-727-297-1778",
         "email": "john.kalafatis@jnchealthcaresolutions.com",
         "address": {
@@ -3910,7 +3910,7 @@
         <div class="nav-container">
             <a href="#" class="nav-logo">
                 <div class="logo-container">
-                    <img src="ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png" alt="Health Insurance Logo" class="logo-image" style="filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
+                    <img src="JNCLogo.png" alt="Health Insurance Logo" class="logo-image" style="filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
                 </div>
             </a>
             
@@ -4867,13 +4867,13 @@
                                     </div>
                                     
                                     <div class="fallback-avatar-content">
-                                        <img class="fallback-avatar" src="public/images/john-profile.png" alt="John Kalafatis" onerror="this.src='https://via.placeholder.com/200x200/4a90e2/ffffff?text=John'">
+                                        <img class="fallback-avatar" src="public/profile.png" alt="John Kalafatis" onerror="this.src='https://via.placeholder.com/200x200/4a90e2/ffffff?text=John'">
                                     </div>
                                     
                                     <div class="fallback-user-info">
                                         <div class="fallback-user-details">
                                             <div class="fallback-mini-avatar">
-                                                <img src="public/images/john-profile.png" alt="John Kalafatis" onerror="this.src='https://via.placeholder.com/200x200/4a90e2/ffffff?text=John'">
+                                                <img src="public/profile.png" alt="John Kalafatis" onerror="this.src='https://via.placeholder.com/200x200/4a90e2/ffffff?text=John'">
                                             </div>
                                             <div class="fallback-user-text">
                                                 <div class="fallback-handle">@JNC</div>
@@ -5120,7 +5120,7 @@
             
             <div class="footer-bottom">
                 <div class="footer-logo">
-                    <img src="ChatGPT Image Sep 13, 2025 at 07_51_39 PM.png" alt="Health Insurance Logo" style="width: 58px; height: 58px; border-radius: 8px; object-fit: contain; margin-right: 12px; filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
+                    <img src="JNCLogo.png" alt="Health Insurance Logo" style="width: 58px; height: 58px; border-radius: 8px; object-fit: contain; margin-right: 12px; filter: brightness(0.8) saturate(0.7) hue-rotate(-10deg);">
                     JNC Health Solutions
                 </div>
                 
@@ -5424,7 +5424,7 @@
             document.getElementById('stateSelect').value = currentState.code;
             
             // Update PDF source
-            const pdfUrl = `https://jnchealthsolutions.github.io/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `licenses/${currentState.code}-license.pdf`;
             document.getElementById('pdfFrame').src = pdfUrl;
             
             // Track license view
@@ -5436,7 +5436,7 @@
         
         function viewPDF() {
             const currentState = states[currentStateIndex];
-            const pdfUrl = `https://jnchealthsolutions.github.io/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `licenses/${currentState.code}-license.pdf`;
             
             // Show PDF in iframe
             document.getElementById('pdfFrame').src = pdfUrl;
@@ -5451,7 +5451,7 @@
         
         function downloadPDF() {
             const currentState = states[currentStateIndex];
-            const pdfUrl = `https://jnchealthsolutions.github.io/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `licenses/${currentState.code}-license.pdf`;
             
             // Create download link
             const link = document.createElement('a');
@@ -6831,7 +6831,7 @@
         const easeInOutCubic = x => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
 
         const ProfileCardComponent = ({
-          avatarUrl = 'public/images/john-profile.png',
+          avatarUrl = 'public/profile.png',
           iconUrl = '<Placeholder for icon URL>',
           grainUrl = '<Placeholder for grain URL>',
           behindGradient,
@@ -7239,7 +7239,7 @@
                 handle: "JNC",
                 status: "Online",
                 contactText: "Contact Me",
-                avatarUrl: "public/images/john-profile.png",
+                avatarUrl: "public/profile.png",
                 showUserInfo: true,
                 enableTilt: true,
                 enableMobileTilt: false,
