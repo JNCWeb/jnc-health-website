@@ -4028,7 +4028,7 @@
                     
                     <div class="about-actions">
                         <button class="cta" onclick="showQuotePopup()">Get Free Quote</button>
-                        <button class="license-btn" onclick="scrollToLicenses()">View My Licenses</button>
+                        <button class="license-btn" onclick="openLicenseModal()">View My Licenses</button>
                     </div>
                 </div>
             </div>
@@ -5002,7 +5002,7 @@
             <div class="license-document">
                 <div class="pdf-viewer-container">
                     <div class="pdf-viewer" id="pdfViewer">
-                        <iframe id="pdfFrame" src="" width="100%" height="600px" style="border: none; border-radius: 8px;" title="License Document Viewer" sandbox="allow-scripts allow-same-origin" ></iframe>
+                        <iframe id="pdfFrame" src="https://www.jnchealthcaresolutions.com/public/licenses/AL-license.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;" title="License Document Viewer" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
                     </div>
                     <div class="pdf-placeholder" id="pdfPlaceholder" style="display: none;">
                         <div class="document-icon">📄</div>
@@ -5485,11 +5485,6 @@
         function nextLicense() {
             currentStateIndex = (currentStateIndex + 1) % states.length;
             updateLicenseDisplay();
-        }
-
-        // Scroll to Licenses Function (now opens modal)
-        function scrollToLicenses() {
-            openLicenseModal();
         }
 
         // Close modal when clicking outside
