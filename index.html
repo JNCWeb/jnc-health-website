@@ -4994,12 +4994,12 @@
                 <div class="pdf-viewer-container">
                     <div class="pdf-viewer" id="pdfViewer">
                         <iframe id="pdfFrame" 
-        src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A//www.jnchealthcaresolutions.com/public/licenses/AL-license.pdf"
+        src="https://docs.google.com/viewer?url=https%3A//www.jnchealthcaresolutions.com/public/licenses/AL-license.pdf&embedded=true"
         width="100%" 
         height="600px" 
         style="border: none; border-radius: 8px;" 
         title="License Document Viewer"
-        sandbox="allow-scripts allow-same-origin">
+        sandbox="allow-scripts allow-same-origin allow-forms">
 </iframe>
                     </div>
                     <div class="pdf-placeholder" id="pdfPlaceholder" style="display: none;">
@@ -5431,7 +5431,7 @@
             document.getElementById('stateSelect').value = currentState.code;
             
             // Update PDF source
-            const pdfUrl = `https://www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://docs.google.com/viewer?url=https%3A//www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf&embedded=true`;
             document.getElementById('pdfFrame').src = pdfUrl;
             
             // Track license view
@@ -5443,7 +5443,7 @@
         
         function viewPDF() {
             const currentState = states[currentStateIndex];
-            const pdfUrl = `https://www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://docs.google.com/viewer?url=https%3A//www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf&embedded=true`;
             
             // Show PDF in iframe
             document.getElementById('pdfFrame').src = pdfUrl;
@@ -5458,7 +5458,7 @@
         
         function downloadPDF() {
             const currentState = states[currentStateIndex];
-            const pdfUrl = `https://www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://docs.google.com/viewer?url=https%3A//www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf&embedded=true`;
             
             // Create download link
             const link = document.createElement('a');
