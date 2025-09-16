@@ -5433,7 +5433,7 @@
             document.getElementById('stateSelect').value = currentState.code;
             
             // Update PDF source
-            const pdfUrl = `public/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf`;
             document.getElementById('pdfFrame').src = pdfUrl;
             
             // Track license view
@@ -5445,7 +5445,7 @@
         
         function viewPDF() {
             const currentState = states[currentStateIndex];
-            const pdfUrl = `public/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf`;
             
             // Show PDF in iframe
             document.getElementById('pdfFrame').src = pdfUrl;
@@ -5460,7 +5460,7 @@
         
         function downloadPDF() {
             const currentState = states[currentStateIndex];
-            const pdfUrl = `public/licenses/${currentState.code}-license.pdf`;
+            const pdfUrl = `https://www.jnchealthcaresolutions.com/public/licenses/${currentState.code}-license.pdf`;
             
             // Create download link
             const link = document.createElement('a');
