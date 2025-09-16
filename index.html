@@ -7441,15 +7441,7 @@
             window.open('https://www.kff.org/', '_blank');
         }
         
-        // Track license modal interactions
-        function openLicenseModal() {
-            trackEvent('license_modal_opened', {
-                user_intent: 'view_credentials'
-            });
-            
-            document.getElementById('licenseModal').style.display = 'block';
-            updateLicenseDisplay();
-        }
+        
         
         // Track profile modal interactions
         function openProfileModal() {
